@@ -5,13 +5,13 @@ class Library():
 
     def add_book(self, title, author):
         self.books.append({"title": title, "author": author})
-        print(f"Book {title} added!\n\n")
+        print(f'Book "{title}" added!\n\n')
 
     def remove_book(self, title):
         for book in self.books:
             if book["title"] == title:
                 self.books.remove(book)
-                print(f"Book {title} removed!\n\n")
+                print(f'Book "{title}" removed!\n\n')
                 return None
         
         print("The desired book was not found!\n\n")
@@ -19,7 +19,7 @@ class Library():
     def search_book(self, title):
         for book in self.books:
             if book['title'] == title:
-                print(f"Book {title} was found!\n\n")
+                print(f'Book "{title}" was found!\n\n')
                 return None
 
         print("The desired book was not found!\n\n")
